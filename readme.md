@@ -40,7 +40,7 @@ extend layout/basic
 Layout
 ---
 
-If you use layout like <layout/basic>
+If you use layout like <layout/basic.jade>
 
 - use `block` to replace the default value
 - use `append` to insert after block
