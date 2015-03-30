@@ -17,7 +17,7 @@ extend layout/basic
 Layout
 ---
 
-If you use layout like <layout/basic.jade>
+If you use layout like [layout/basic](layout/basic.jade)
 
 - use `block` to replace the default value
 - use `append` to insert after block
