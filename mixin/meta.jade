@@ -1,0 +1,4 @@
+mixin meta(pair)
+	each key, val in pair
+		meta(name='#{key}' content='#{val}')
+
