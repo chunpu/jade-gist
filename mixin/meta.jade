@@ -1,4 +1,5 @@
 mixin meta(pair)
-	each key, val in pair
-		meta(name='#{key}' content='#{val}')
+	each val, key in pair
+		if val
+			meta(name='#{key}' content='#{val}')
 

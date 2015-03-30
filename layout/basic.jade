@@ -1,7 +1,8 @@
 //- basic layout
-//- use this by extend layout/basic.jade
+
+//- use this by extend layout/basic
 //- init mixin
-include ../mixin/meta
+include ../mixin/all
 
 doctype html
 html
@@ -10,22 +11,32 @@ html
 		//- set charset, should before title
 		meta(charset='utf-8')
 
-		//- unknown..
+		//- `IE=edge` tells IE to use the most recent standard
+		//- `chrome=1` means site to render in ChromeFrame
 		meta(http-equiv='X-UA-Compatible' content='IE=edge,chrome=1')
 
 		title= title
 
 		block meta
-			+meta({a: 'b'})
+			+meta({
+				  keywords: keywords
+				, description: description
+				, viewport: 'width=device-width'
+				, renderer: 'webkit' // for double core browsers like 360 use webkit first
+			})
 
 		block style
-			link(href='style.css' rel='stylesheet')
+			link(rel='stylesheet' href='/style.css')
 
-		//- sync scripts which block document
-		block sync-script
+		block icon
 
-		//- normal script
-		block script
-			script(async src='app.js')
+		//- old browser compat
+		block compat
 
 	body
+		block header
+		block main
+			main(role='main')
+		block footer
+		block script
+			script(src='/app.js')
