@@ -1,6 +1,6 @@
 {
   "name": "jade-gist",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Layouts and Mixins by Jade",
   "main": "index.js",
   "scripts": {
