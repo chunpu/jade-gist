@@ -1,11 +1,12 @@
 {
   "name": "jade-gist",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Layouts and Mixins by Jade",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "readme": "pretty-readme > readme.md"
+    "readme": "pretty-readme > readme.md",
+	"build": "jade -P -p . < browser/index.jade > browser/index.html"
   },
   "author": "",
   "license": "ISC"

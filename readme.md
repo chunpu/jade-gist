@@ -37,6 +37,19 @@ extend layout/basic
 ```
 
 
+Use it by npm
+---
+
+```sh
+npm i jade-gist
+
+editor views/index.jade
+
+# pretty build jade file
+jade -P -p node_modules/jade-gist/. < views/index.jade
+```
+
+
 Layout
 ---
 

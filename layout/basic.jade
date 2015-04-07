@@ -15,7 +15,8 @@ html
 		//- `chrome=1` means site to render in ChromeFrame
 		meta(http-equiv='X-UA-Compatible' content='IE=edge,chrome=1')
 
-		title= title
+		block title
+			title= title
 
 		block meta
 			+meta({
